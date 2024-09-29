@@ -8,7 +8,7 @@ namespace CleanCode_CodeStyle
 {
     internal class Program
     {
-        public static int GetNumber(int a, int b, int c)
+        public static int GetValidNumber(int a, int b, int c)
         {
             if (a < b)
                 return b;
