@@ -1,12 +1,12 @@
 ﻿internal class Program
 {
-    public static int GetValidNumber(int a, int b, int c)
+    public static int Clamp(int minValue, int value, int maxValue)
     {
-        if (a < b)
-            return b;
-        else if (a > c)
-            return c;
+        if (minValue < value)
+            return value;
+        else if (value > maxValue)
+            return maxValue;
         else
-            return a;
-    }
+            return minValue;
+    }    
 }
