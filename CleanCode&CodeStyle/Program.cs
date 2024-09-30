@@ -1,12 +1,12 @@
 ﻿internal class Program
 {
-    public static int Clamp(int minValue, int value, int maxValue)
+    public static int Clamp(int value, int minValue, int maxValue)
     {
-        if (minValue < value)
-            return value;
+        if (value < minValue)
+            return minValue;
         else if (value > maxValue)
             return maxValue;
         else
-            return minValue;
+            return value;
     }    
 }
